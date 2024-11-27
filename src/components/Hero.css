@@ -47,3 +47,10 @@
     object-position: center 5%; /* This will move the image down. Adjust the percentage to fine-tune */
   }
   
+  .hero-content p {
+    font-size: 1.3rem;
+    line-height: 1.0;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+  }
+  

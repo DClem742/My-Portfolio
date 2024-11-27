@@ -10,7 +10,7 @@ import DarkModeToggle from './components/DarkModeToggle';
 import './App.css';
 
 function App() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
 
   const toggleDark = () => {
     setIsDark(!isDark);
