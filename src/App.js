@@ -20,8 +20,10 @@ function App() {
   useEffect(() => {
     if (isDark) {
       document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
     }
-  }, []);
+  }, [isDark]);
 
   const particlesInit = async (main) => {
     await loadFull(main);
