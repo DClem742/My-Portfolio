@@ -1,7 +1,22 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 const Contact = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(form)).toString()
+    })
+    .then(() => {
+      form.reset();
+      alert('Message sent successfully!');
+    });
+  };
+
   return (
     <section id="contact" className="section contact">
       <h2 className="section-title">Get In Touch</h2>
@@ -22,7 +37,8 @@ const Contact = () => {
           className="contact-form" 
           name="contact" 
           method="POST" 
-          netlify
+          data-netlify="true"
+          onSubmit={handleSubmit}
         >
           <input type="hidden" name="form-name" value="contact" />
           <div className="form-group">
