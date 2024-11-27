@@ -1,0 +1,39 @@
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 350px; /* Increased from 20px to move it away from the Contact link */
+  z-index: 1001;
+}
+
+.dark-mode-toggle input {
+  display: none;
+}
+
+.toggle-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--secondary-color);
+  border-radius: 1rem;
+  width: 3rem;
+  height: 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle-indicator {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+  transform: translateX(-0.8rem);
+  transition: transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input:checked + label .toggle-indicator {
+  transform: translateX(0.8rem);
+}
