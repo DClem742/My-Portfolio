@@ -17,7 +17,9 @@ const Hero = () => {
                 bringing a unique blend of creativity and technical expertise to every project. I thrive on bringing 
                 both my own visions and others' ideas to life, turning complex challenges into elegant solutions.
               </p>
-        <button className="cta-button">View My Work</button>
+        <a href="https://github.com/DClem742?tab=repositories" target="_blank" rel="noopener noreferrer">
+          <button className="cta-button">View My Work</button>
+        </a>
       </div>
     </section>
   );
