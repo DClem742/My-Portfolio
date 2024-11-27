@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
@@ -25,19 +23,8 @@ function App() {
     }
   }, [isDark]);
 
-  const particlesInit = async (main) => {
-    await loadFull(main);
-  };
-
   return (
     <div className="App">
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        options={{
-          // ... particle options from previous response ...
-        }}
-      />
       <DarkModeToggle isDark={isDark} toggleDark={toggleDark} />
       <Navbar />
       <Hero />
