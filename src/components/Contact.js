@@ -4,25 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add your form submission logic here
-    console.log(formData);
-  };
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
   return (
     <section id="contact" className="section contact">
       <h2 className="section-title">Get In Touch</h2>
@@ -39,14 +20,13 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <form className="contact-form" name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
           <div className="form-group">
             <input
               type="text"
               name="name"
               placeholder="Your Name"
-              value={formData.name}
-              onChange={handleChange}
               required
             />
           </div>
@@ -55,8 +35,6 @@ const Contact = () => {
               type="email"
               name="email"
               placeholder="Your Email"
-              value={formData.email}
-              onChange={handleChange}
               required
             />
           </div>
@@ -64,8 +42,6 @@ const Contact = () => {
             <textarea
               name="message"
               placeholder="Your Message"
-              value={formData.message}
-              onChange={handleChange}
               required
             ></textarea>
           </div>
