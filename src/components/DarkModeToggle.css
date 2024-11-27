@@ -1,8 +1,19 @@
 .dark-mode-toggle {
   position: fixed;
   top: 20px;
-  right: 350px; /* Increased from 20px to move it away from the Contact link */
+  right: 350px;  /* Increased this value to move it left */
   z-index: 1001;
+  cursor: pointer;
+}
+
+.theme-icon {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  transition: transform 0.3s ease;
+}
+
+.theme-icon:hover {
+  transform: scale(1.2);
 }
 
 .dark-mode-toggle input {
