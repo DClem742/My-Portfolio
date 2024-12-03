@@ -13,10 +13,16 @@ const Navbar = () => {
         <a href="#skills" onClick={() => setIsOpen(false)}>Skills</a>
         <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
       </div>
-      <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
-        <span></span>
-        <span></span>
-        <span></span>
+      <div className="nav-controls">
+        {/* Add your dark mode toggle component here */}
+        <div className="dark-mode-toggle">
+          {/* Your dark mode icon/button */}
+        </div>
+        <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
   );

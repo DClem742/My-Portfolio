@@ -67,4 +67,25 @@
   .nav-links a {
     margin: 0.5rem 0;
   }
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
 }

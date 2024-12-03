@@ -5,6 +5,7 @@
     justify-content: center;
     background: var(--bg-color);
     text-align: center;
+    padding-top: 200px; /* Add this line to create space for navbar */
 }
 
 .hero-content h1 {
@@ -35,7 +36,7 @@
   .profile-image {
     width: 400px;
     height: 400px;
-    margin: 0 auto 2rem;
+    margin: 2rem auto 2rem;
     border-radius: 50%;
     overflow: hidden;
     padding: 3px;
