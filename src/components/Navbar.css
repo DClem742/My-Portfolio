@@ -24,14 +24,15 @@
   display: flex;
   gap: 2rem;
 }
-
 .nav-links a {
   margin-left: 2rem;
   text-decoration: none;
   color: var(--secondary-color);
   transition: all 0.3s ease;
+  font-weight: 600; /* Makes the text bolder */
+  font-size: 1.1rem; /* Slightly larger text */
+  letter-spacing: 0.5px; /* Improves readability */
 }
-
 .nav-links a:hover {
   color: #4a90e2;
   transform: translateY(-2px);
@@ -73,6 +74,7 @@
     text-align: center;
     display: none;
     flex-direction: column;
+    transform: none;
     z-index: 999;
   }
 
