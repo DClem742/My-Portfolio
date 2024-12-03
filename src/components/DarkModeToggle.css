@@ -1,9 +1,16 @@
 .dark-mode-toggle {
   position: fixed;
-  top: 20px;
-  right: 350px;  /* Increased this value to move it left */
+  top: 23px;  /* Adjusted to align with hamburger */
+  right: 70px;  /* Gives nice spacing from hamburger */
   z-index: 1001;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .dark-mode-toggle {
+    top: 23px;    /* Matches mobile hamburger center */
+    right: 60px;  /* Consistent spacing on mobile */
+  }
 }
 
 .theme-icon {
