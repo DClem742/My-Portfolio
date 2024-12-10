@@ -10,6 +10,13 @@ const Projects = () => {
       image: "/images/project1.jpg",
       githubLink: "https://github.com/DClem742/MythicMana",
       liveLink: "https://mythicmana.netlify.app"
+    },
+    {
+      title: "Marvelous Movies",
+      description: "A movie database application themed around Marvel characters",
+      technologies: ["Javascript", "OMDB API", "CSS", "HTML"],
+      image: "/images/project2.jpg",
+      githubLink: "https://github.com/DClem742/Marvelous_Movies",
     }
   ];
 
