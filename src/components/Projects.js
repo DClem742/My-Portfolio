@@ -17,6 +17,7 @@ const Projects = () => {
       technologies: ["Javascript", "OMDB API", "CSS", "HTML"],
       image: "/images/project2.jpg",
       githubLink: "https://github.com/DClem742/Marvelous_Movies",
+      liveLink: "https://marvelous-movies.netlify.app"  // Add this line
     }
   ];
 
