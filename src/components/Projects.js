@@ -18,7 +18,7 @@ const Projects = () => {
       image: "/images/project2.jpg",
       githubLink: "https://github.com/DClem742/Marvelous_Movies",
       liveLink: "https://marvelous-movies.netlify.app"  // Add this line
-    }
+    },
     {
       title: "Duskmourn RPG",
       description: "Duskmourn is a turn-based role-playing game where you play as a hero in a haunted mansion ruled by the demon, Valgavoth.",
