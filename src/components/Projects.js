@@ -19,6 +19,14 @@ const Projects = () => {
       githubLink: "https://github.com/DClem742/Marvelous_Movies",
       liveLink: "https://marvelous-movies.netlify.app"  // Add this line
     }
+    {
+      title: "Duskmourn RPG",
+      description: "Duskmourn is a turn-based role-playing game where you play as a hero in a haunted mansion ruled by the demon, Valgavoth.",
+      technologies: ["Python", "CSS", "HTML"],
+      image: "/images/project3.jpg",
+      githubLink: "https://github.com/DClem742/Duskmourn-Game",
+      
+    }
   ];
 
   return (    <section id="projects" className="section projects">
