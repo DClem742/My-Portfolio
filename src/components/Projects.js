@@ -26,6 +26,14 @@ const Projects = () => {
       image: "/images/project3.jpg",
       githubLink: "https://github.com/DClem742/Duskmourn-Game",
       
+    },
+    {
+      title: "Metal Merch",
+      description: "A fake store for metal merchandise",
+      technologies: ["React", "CSS", "FastAPI"],
+      image: "/images/project4.jpg",
+      githubLink: "https://github.com/DClem742/CrudCo-ECommerce",
+      
     }
   ];
 
